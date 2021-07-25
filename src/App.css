@@ -1,38 +1,63 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 1900px;
+  height: 800px;
   display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+.Block {
+  width: 500px ;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   flex-direction: column;
+}
+
+.display {
+  height: 150px;
+  width: 250px;
+  background-color: darkblue;
+  border-radius: 30px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.counter {
+  margin: 50px;;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  background-color: dodgerblue;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.DisplayNum {
+  color: black;
+  font-size: xxx-large;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  margin-left: 50px;
+
+
+}
+.DisplayRed {
+  color: red;
+  font-size: xxx-large;
+}
+.Button__counter {
+  height: 100px;
+  width: 150px;
+  border-radius: 40px;
+  color: darkblue;
+  font-size: xxx-large;
+  border: 2px solid;
 }
