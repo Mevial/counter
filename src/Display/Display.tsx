@@ -1,14 +1,20 @@
 import React from "react";
 
 type DisplayPropsType = {
-    count: number
+    displayValue: number
+    maxCount: number
 }
 
 export const Display: React.FC<DisplayPropsType> = (props) => {
+    const maxInputValue = props.maxCount
+
     return (
 
-        <div className={props.count === 5 ? 'DisplayNum DisplayRed' : 'DisplayNum'}>{props.count}
+        <div className=
+                 {props.displayValue === maxInputValue ? 'DisplayNum DisplayRed' : 'DisplayNum'}
+        >{props.displayValue}
         </div>
+
     )
 
 }
